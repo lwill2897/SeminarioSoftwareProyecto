@@ -112,6 +112,9 @@ body{
 }
 
 @media screen and (max-width: 700px){
+	.wrap{
+		padding-top: 40%;
+	}
 	.category_list{
 		flex-direction: column;
 	}
@@ -143,9 +146,3 @@ body{
 		margin-left: 0px;
 	}
 }
-
-/*.contenedorimg{
-    display: block;
-    cursor: pointer;
-    margin-left: 8%;
-}*/

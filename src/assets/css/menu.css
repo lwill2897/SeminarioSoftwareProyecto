@@ -99,9 +99,9 @@ header label i {
     float: left;
 }
 
-/*.menu .logo img{
+.menu .logo img{
     width: 60%;
-}*/
+}
 
 
 /**/
@@ -118,11 +118,15 @@ header label i {
     background-color:var(--secondary);
     transition: all 0.5s;
 }
-
-.enlaces a {
+.enlaces li {
     font-size: 1em;
     padding: 2em;
     padding-top: 0em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.enlaces a {
     text-decoration: none;
     color: whitesmoke;
 }
