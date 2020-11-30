@@ -161,6 +161,7 @@ header .categorias a.activo {
 /* Footer */
 /* ------------------------- */
 footer .redes-sociales {
+	margin-top: 0%;
 	display: flex;
 	align-content: center;
 	justify-content: center;
