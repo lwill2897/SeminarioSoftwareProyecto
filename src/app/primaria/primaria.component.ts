@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-primaria',
-  template: './primaria.component.html',
+  templateUrl: './primaria.component.html',
   styleUrls: ['./primaria.component.css']
 })
-export class primariaComponent implements OnInit {
+export class PrimariaComponent implements OnInit {
 
   constructor() { }
 
