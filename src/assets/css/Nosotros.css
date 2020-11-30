@@ -1,0 +1,116 @@
+
+.about_area {
+    padding-bottom: 210px;
+    padding-top: 150px;
+    background-image: url(../img/banner/burger_bg_1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width: 767px) {
+    .about_area {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .about_area {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .about_area {
+      padding-top: 100px;
+      padding-bottom: 120px;
+    }
+  }
+
+  .about_area .about_info p {
+    font-size: 16px;
+    line-height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 37px;
+  }
+  
+  @media (max-width: 767px) {
+    .about_area .about_info a {
+      margin-bottom: 30px;
+    }
+  }
+  
+ 
+  .about_area .about_thumb2 {
+    position: relative;
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .about_area .about_thumb2 {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .about_area .about_thumb2 {
+      margin-bottom: 40px;
+    }
+  }
+  
+  .about_area .about_thumb2 img {
+    width: 100%;
+  }
+  
+  .about_area .about_thumb2 .img_1 img {
+    width: 100%;
+  }
+  
+  .about_area .about_thumb2 .img_2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+    right: -30px;
+    bottom: -60px;
+  }
+  
+  @media (max-width: 767px) {
+    .about_area .about_thumb2 .img_2 {
+      left: auto;
+      bottom: 0;
+      top: auto;
+      right: 0;
+      text-align: right;
+      bottom: -30px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .about_area .about_thumb2 .img_2 {
+      left: auto;
+      bottom: 0;
+      top: auto;
+      right: -10px;
+      text-align: right;
+      bottom: -30px;
+    }
+  }
+  
+  .about_area .about_thumb2 .img_2 img {
+    width: 100%;
+  }
+  
+  @media (max-width: 767px) {
+    .about_area .about_thumb2 .img_2 img {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .about_area .about_thumb2 .img_2 img {
+      width: 50%;
+    }
+  }
