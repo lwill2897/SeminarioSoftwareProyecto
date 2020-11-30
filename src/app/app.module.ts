@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { PreescolarComponent } from './preescolar/preescolar.component';
 import { PrimariaComponent } from './primaria/primaria.component';
-import { SecundariaComponent } from './secundaria/secundaria.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { PopularComponent } from './popular/popular.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +15,8 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
     LoginComponent,
     PreescolarComponent,
     PrimariaComponent,
-    SecundariaComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    PopularComponent
   ],
   imports: [
     BrowserModule,
