@@ -8,6 +8,11 @@ import { PreescolarComponent } from './preescolar/preescolar.component';
 import { PrimariaComponent } from './primaria/primaria.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PopularComponent } from './popular/popular.component';
+import { RegistroComponent } from './registro/registro.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import {AngularFireDatabaseModule} from '@angular/fire/database'
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -16,10 +21,13 @@ import { PopularComponent } from './popular/popular.component';
     PreescolarComponent,
     PrimariaComponent,
     NosotrosComponent,
-    PopularComponent
+    PopularComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
     AppRoutingModule
   ],
   providers: [],
