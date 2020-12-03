@@ -7,4 +7,8 @@ import {AngularFireDatabase, AngularFireList, AngularFireObject} from '@angular/
 export class RegistroService {
   regRef:AngularFireList<any>;
   constructor(private rdb:AngularFireDatabase) { }
+  listarDatos(){
+    this.regRef = this.rdb.list('Personas');
+    return this.regRef;
+  }
 }

@@ -9,6 +9,7 @@ import { PrimariaComponent } from './primaria/primaria.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { PopularComponent } from './popular/popular.component';
 import { RegistroComponent } from './registro/registro.component';
+
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import {AngularFireDatabaseModule} from '@angular/fire/database'

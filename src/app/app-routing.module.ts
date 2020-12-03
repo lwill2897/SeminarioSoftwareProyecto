@@ -8,6 +8,7 @@ import { PrimariaComponent } from './primaria/primaria.component';
 import { PreescolarComponent } from './preescolar/preescolar.component';
 import { PopularComponent } from './popular/popular.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { RegistroComponent} from './registro/registro.component'
 import { from } from 'rxjs';
 
 const routes: Routes = [
@@ -22,7 +23,9 @@ const routes: Routes = [
   {path:'Popular', component: PopularComponent},
   {path:'', redirectTo:'Popular', pathMatch:'full'},
   {path:'Nosotros', component: NosotrosComponent},
-  {path:'', redirectTo:'Nosotros', pathMatch:'full'}
+  {path:'', redirectTo:'Nosotros', pathMatch:'full'},
+  {path:'Registro', component: RegistroComponent},
+  {path:'', redirectTo:'Registro', pathMatch:'full'}
 ];
 
 @NgModule({

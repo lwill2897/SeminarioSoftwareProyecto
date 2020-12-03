@@ -1,1 +1,20 @@
-<p>registro works!</p>
+<table padding-top="50%" class="table table-bordered table-responsive-sm table-responsibe-md">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dato of Dato">
+            <td>{{dato.Nombre}}</td>
+            <td>{{dato.Apellido}}</td>
+            <td>{{dato.Direccion}}</td>
+            <td>{{dato.Telefono}}</td>
+            <td>{{dato.Email}}</td>
+        </tr>
+    </tbody>
+</table>

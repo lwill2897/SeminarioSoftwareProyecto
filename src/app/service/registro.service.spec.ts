@@ -6,8 +6,9 @@ describe('RegistroService', () => {
   let service: RegistroService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(RegistroService);
+    TestBed.configureTestingModule({
+      providers:[RegistroService]
+    });
   });
 
   it('should be created', () => {
