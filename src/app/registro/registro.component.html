@@ -1,8 +1,9 @@
-<table padding-top="50%" class="table table-bordered table-responsive-sm table-responsibe-md">
+<table margin-top="80%" class="table table-bordered table-responsive-sm table-responsibe-md">
     <thead>
         <tr>
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
+            <th scope="col">Edad</th>
             <th scope="col">Dirección</th>
             <th scope="col">Telefono</th>
             <th scope="col">Email</th>
@@ -12,6 +13,7 @@
         <tr *ngFor="let dato of Dato">
             <td>{{dato.Nombre}}</td>
             <td>{{dato.Apellido}}</td>
+            <td>{{dato.Edad}}</td>
             <td>{{dato.Direccion}}</td>
             <td>{{dato.Telefono}}</td>
             <td>{{dato.Email}}</td>
