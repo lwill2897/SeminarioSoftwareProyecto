@@ -1,22 +1,18 @@
-<table margin-top="80%" class="table table-bordered table-responsive-sm table-responsibe-md">
-    <thead>
-        <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Apellido</th>
-            <th scope="col">Edad</th>
-            <th scope="col">Dirección</th>
-            <th scope="col">Telefono</th>
-            <th scope="col">Email</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let dato of Dato">
-            <td>{{dato.Nombre}}</td>
-            <td>{{dato.Apellido}}</td>
-            <td>{{dato.Edad}}</td>
-            <td>{{dato.Direccion}}</td>
-            <td>{{dato.Telefono}}</td>
-            <td>{{dato.Email}}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="form-container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Registrarse</h1>
+    <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+      <input type="text" formControlName="Nombre" placeholder="Nombre">
+      <input type="text" formControlName="Apellido" placeholder="Apellido">
+      <input type="number" formControlName="Telefono" placeholder="Telefono">
+      <input type="text" formControlName="Direccion" placeholder="Direccion">
+      <input type="text" formControlName="Email" placeholder="Email">
+      <button type="submit" class="btn-send" [disabled]="!contactForm.valid">Guardar</button>
+    </form>
+  </div>
+  

@@ -1,28 +1,42 @@
 import { importType } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
-import {RegistroService} from '../service/registro.service'
+import { DataDbService} from '../service/data-db.service';
 import {Registro} from '../model/registro'
+import { FormControl, FormGroup} from '@angular/forms';
+
 @Component({
-  selector: 'app-registro',
+  selector: 'registroform',
   templateUrl: './registro.component.html',
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent implements OnInit {
-  Dato:Registro[];
-
-  constructor( public leerPersona : RegistroService) { }
-
-  ngOnInit(): void {
-    let s = this.leerPersona.listarDatos();
-
-    s.snapshotChanges().subscribe(data => {
-      this.Dato = [];
-      data.forEach(item => {
-        let a = item.payload.toJSON();
-        a['Skey'] = item.key;
-        this.Dato.push(a as Registro)
-      })
+  
+  createFormGroup(){
+    return new FormGroup({
+      Apellido: new FormControl(''),
+      Direccion: new FormControl(''),
+      Email: new FormControl(''),
+      Nombre: new FormControl(''),
+      Telefono: new FormControl('')
     })
   }
 
-}
+   contactForm: FormGroup;
+  constructor( private dbData: DataDbService ) {
+    this.contactForm = this.createFormGroup();
+   }
+
+  ngOnInit(): void {
+  
+    }
+   onResetForm(){
+     this.contactForm.reset();
+   }
+  
+   onSaveForm(){
+     
+     this.dbData.saveMessage(this.contactForm.value);
+   }
+
+  }
+
