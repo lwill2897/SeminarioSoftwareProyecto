@@ -1,4 +1,5 @@
 export interface Registro {
+    $key: string;
     Nombre: string;
     Apellido: string;
     Edad: number;

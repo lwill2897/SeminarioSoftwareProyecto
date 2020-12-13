@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
-import { messageI } from '../model/message.interface';
+/*import { messageI } from '../model/message.interface';*/
 import { observable } from 'rxjs';
 
 
